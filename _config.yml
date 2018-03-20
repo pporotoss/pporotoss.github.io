@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "https://pporotoss.github.io"
+url: https://pporotoss.github.io
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
