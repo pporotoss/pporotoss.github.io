@@ -5,14 +5,15 @@ url: https://pporotoss.github.io
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: 메인페이지가기
+  title: 메인페이지
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
   description: "A website with blog posts and pages" # used by search engines
 
   # Header and footer text
-  #header_text: > #two or three lines to describe your site
+  header_text: > #two or three lines to describe your site
+    <h1>깃허브 블로그</h1>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
@@ -26,7 +27,7 @@ theme_settings:
   facebook:
   flickr:
   gitlab:
-  github: "sylhare"
+  github: "pporotoss"
   google_plus:
   instagram:
   keybase:
@@ -88,3 +89,8 @@ sass:
 plugins: [jekyll-paginate, jekyll-seo-tag]
 #theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem
 exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png"]
+
+# Set Timezone
+timezone: Asia/Seoul
+
+future: true
