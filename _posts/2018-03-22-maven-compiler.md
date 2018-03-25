@@ -5,7 +5,7 @@ tags: [Maven]
 ---
 
 >메이븐 프로젝트로 자바 프로젝트를 생성하면, 기본값으로 자바 1.5로 컴파일이 되기 때문에   
-다른버전의 자바로 컴파일 하기 위해서는 프로퍼티를 설정하거나, maven compiler plugin 을 이용하여
+다른버전의 자바로 컴파일 하기 위해서는 maven compiler plugin 을 이용하여
 자바 버전을 명시해야 한다.
 
 - 프로퍼티 설정      
@@ -27,8 +27,8 @@ tags: [Maven]
            <artifactId>maven-compiler-plugin</artifactId>
            <version>3.7.0</version>
            <configuration>
-             <source>1.8</source>
-             <target>1.8</target>
+             <source>${maven.compiler.source}</source>
+             <target>${maven.compiler.target}</target>
            </configuration>
          </plugin>
        </plugins>
