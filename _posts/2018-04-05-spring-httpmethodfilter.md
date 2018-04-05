@@ -27,7 +27,7 @@ PUT과 DELETE 를 사용가능하다.
 </filter-mapping>
 ```
 
-- JavaConfig 설정
+- JavaConfig 설정   
 ```
 public class MyWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
@@ -48,6 +48,7 @@ public class MyWebAppInitializer extends AbstractAnnotationConfigDispatcherServl
 </form>
 
 ```
+
 - 스프링 태그 사용
 ```
 <form:form method="delete">
