@@ -27,7 +27,8 @@ PUT과 DELETE 를 사용가능하다.
 </filter-mapping>
 ```
 
-- JavaConfig 설정
+- JavaConfig 설정   
+
 ```
 public class MyWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
@@ -41,14 +42,17 @@ public class MyWebAppInitializer extends AbstractAnnotationConfigDispatcherServl
 
 - html form 태그 사용
    1. form의 method="post"로 설정한다.
-   2. hidden form 에다가 name="_hidden"으로 설정후 value에 원하는 방식(PUT, DELETE)를 적어준다.
+   2. hidden form 에다가 name="_hidden"으로 설정후 value에 원하는 방식(PUT, DELETE)를 적어준다.   
+   
 ```
 <form name="example" method="post">
     <input type="hidden" name="_hidden" value="PUT" />
 </form>
 
 ```
-- 스프링 태그 사용
+
+- 스프링 태그 사용   
+
 ```
 <form:form method="delete">
     <p class="submit"><input type="submit" value="Delete Pet"/></p>
