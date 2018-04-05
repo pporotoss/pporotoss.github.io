@@ -23,7 +23,7 @@ PUT과 DELETE 를 사용가능하다.
 
 <filter-mapping>
     <filter-name>httpMethodFilter</filter-name>
-    <servlet
+    <servlet-name>dispatcher</servlet-name>
 </filter-mapping>
 ```
 
