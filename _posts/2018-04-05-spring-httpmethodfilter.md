@@ -42,11 +42,11 @@ public class MyWebAppInitializer extends AbstractAnnotationConfigDispatcherServl
 
 - html form 태그 사용
    1. form의 method="post"로 설정한다.
-   2. hidden form 에다가 name="_hidden"으로 설정후 value에 원하는 방식(PUT, DELETE)를 적어준다.   
+   2. hidden form 에다가 name="_method"으로 설정후 value에 원하는 방식(PUT, DELETE)를 적어준다.   
    
 ```
 <form name="example" method="post">
-    <input type="hidden" name="_hidden" value="PUT" />
+    <input type="hidden" name="_method" value="PUT" />
 </form>
 
 ```
