@@ -12,8 +12,8 @@ tags: [spring, spring-security]
 - AbstractUserDetailsAuthenticationProvider는 메시지를 SpringSecurityMessageSource 를 이용하여 가져온다.
 - SpringSecurityMessageSource는 메시지 파일의 basename을 'org.springframework.security.messages' 로 설정해 놓았다. 
 - 따라서 스프링 시큐리티에서 발생하는 Exception의 메시지를 재정의하기 위해서는 아래와 같은 작업이 필요하다.
-   1. 프로젝트 파일에 org.springframework.security 패키지를 생성한다.
-   2. 생성한 패키지 안에 spring-security-core.jar 파일 안에 포함된 messages.properties 파일들을 복사해온다.
+   1. 프로젝트의 resources 폴더에 org/springframework/security 폴더를 생성한다.
+   2. 생성한 폴더에 spring-security-core.jar 파일 안에 포함된 messages.properties 파일들을 복사해온다.
    3. 복사해온 messages.properties 파일을 열어 필요한 값만 수정해준다.
    4. messages.properties 파일은 Locale 이 써진 파일이 우선 적용되게 된다.
 
